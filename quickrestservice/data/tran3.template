@@ -1,0 +1,19 @@
+request_uri=word
+request_method=put
+request_body_start
+{  
+   "word":"impermanence",
+   "usage":
+   ["The ancient Roman ruins are a telling reminder of the impermanence of even the grandest man-made constructions."]
+}
+request_body_end
+response_status=200
+response_headers_start
+content-type=application/json
+response_headers_end
+response_body_start
+{
+	"status" :"Success",
+	"message":"Updated word impermanence in global dictionary"
+}
+response_body_end
