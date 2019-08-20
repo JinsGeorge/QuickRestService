@@ -1,0 +1,20 @@
+request_uri=word
+request_method=post
+request_body_start
+{  
+   "word":"impermanence",
+   "meaning":"the state or fact of lasting for only a limited period of time.",
+   "usage":
+   ["She describes the impermanence of human existence."]
+}
+request_body_end
+response_status=200
+response_headers_start
+content-type=application/json
+response_headers_end
+response_body_start
+{
+	"status" :"Success",
+	"message":"Added word impermanence to global dictionary"
+}
+response_body_end

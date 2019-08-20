@@ -1,0 +1,16 @@
+request_uri=word/impermanence
+request_method=get
+response_status=200
+response_headers_start
+Content-type=application/json
+response_headers_end
+response_body_start
+{
+   "word":"impermanence",
+   "meaning":"The state or fact of lasting for only a limited period of time.",
+   "usage":[
+      "She describes the impermanence of human existence.",
+      "The ancient Roman ruins are a telling reminder of the impermanence of even the grandest man-made constructions."
+   ]
+}
+response_body_end
