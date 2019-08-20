@@ -1,2 +1,2 @@
 # QuickRestService
-QuickRestService is a simple project which make use of an httpserver to bring up a REST based API is minutes. Enable users to create a mock service by filling up a template file.  Supports most common HTTP Methods. Can consider as a java alternative to simpleHttpServer in Python. 
+QuickRestService is a simple REST mocking tool to bring up a REST based API application in minutes. The packaged project enable users to create mock service by filling up the template files (samples provided). Supports most common HTTP Methods and can consider as a java alternative to simpleHttpServer in Python with few more additional features.
