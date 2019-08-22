@@ -52,7 +52,7 @@ public class RequestHandler implements HttpHandler{
 	public void handle(HttpExchange he) throws IOException {
 	
 		log.info("Received request " );
-		setResponse(storage.getRequestResponse(he));
+		setResponse(storage.get(he));
 		if(getResponse().hasHeaders())
 			he.getResponseHeaders().putAll(getResponse().getHeaders());
 		he.sendResponseHeaders(getResponse().getStatus(), getResponse().getBody().length());

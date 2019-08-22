@@ -33,6 +33,7 @@ public class ServiceStoreImpl  implements ServiceStore{
 	public Set<String> getURIs() {
 		return getServiceStore().keySet();
 	}
+	
 	public OperationStore getOperationStore(String key) {
 		return getServiceStore().get(key);
 	}
@@ -59,7 +60,7 @@ public class ServiceStoreImpl  implements ServiceStore{
 		this.serviceStore = serviceStore;
 	}
 
-	public RestServiceRequestResponse getRequestResponse(HttpExchange he) {
+	public RestServiceRequestResponse get(HttpExchange he) {
 		URI uri = he.getRequestURI();
 		String path = uri.getPath();
 		if(operationExists(path))
@@ -100,7 +101,7 @@ public class ServiceStoreImpl  implements ServiceStore{
 		}
 	}
 	
-	public void addServiceToStorage(RestServiceOperation restServiceOperation)
+	public void add(RestServiceOperation restServiceOperation)
 	{
 		if(operationExists(restServiceOperation.getPath()))
 		{
@@ -115,5 +116,15 @@ public class ServiceStoreImpl  implements ServiceStore{
 		}
 	}
 
+	
+	public void delete(RestServiceOperation restServiceOperation)
+	{
+		if(operationExists(restServiceOperation.getPath()))
+		{
+			OperationStore os =  getOperationStore(restServiceOperation.getPath());
+			os.removeTransaction(restServiceOperation);
+		}
+		
+	}
 	
 }

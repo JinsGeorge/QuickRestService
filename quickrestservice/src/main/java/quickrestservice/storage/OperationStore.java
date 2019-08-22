@@ -54,6 +54,15 @@ public class OperationStore {
 		}
 		
 	}
+
+	public void removeTransaction(RestServiceOperation restServiceOperation) {
+		if(methodExists(restServiceOperation.getMethod()))
+		{
+			TransactionStore ts = getTransactionStore(restServiceOperation.getMethod());
+			ts.removeTransaction(restServiceOperation);
+		}
+		
+	}
 	
 	
 
