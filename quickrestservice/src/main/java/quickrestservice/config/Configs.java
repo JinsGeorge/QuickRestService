@@ -28,5 +28,5 @@ public class Configs {
 	public static final String RESPONSE_HEADER = String.valueOf("response_header");
 	public static final String RESPONSE_HEADER_START = String.valueOf("response_headers_start");
 	public static final String RESPONSE_HEADER_END = String.valueOf("response_headers_end");
-
+	
 }
