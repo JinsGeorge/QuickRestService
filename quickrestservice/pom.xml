@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.viren.tools</groupId>
 	<artifactId>quickrestservice</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>quickrestservice</name>
 	<description>Quick Rest Service for creating rest mocks</description>
 	<packaging>jar</packaging>

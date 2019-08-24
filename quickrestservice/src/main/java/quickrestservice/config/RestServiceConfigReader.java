@@ -28,7 +28,7 @@ public class RestServiceConfigReader {
 	private int port;
 	private String basePath;
 	private static final Log log = LogFactory.getLog(RestServiceConfigReader.class);
-	private static final int POLL_INTERVAL = 5000;
+	private static final int POLL_INTERVAL = 30000;
 
 	private RequestHandler requestHandler;
 	private String sectionProcessing;
