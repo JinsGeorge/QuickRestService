@@ -32,8 +32,9 @@ public class ServiceManager {
 	 * provide rest operations to the server and assign request handler
 	 * 
 	 * @throws IOException
+	 * @throws InterruptedException 
 	 */
-	public void loadOperations() throws IOException {
+	public void loadOperations() throws IOException, InterruptedException {
 		RestServiceConfigReader config = RestServiceConfigReader.load();
 		log.info("Setting server on port " + config.getPort());
 		getHttpServer().bind(new InetSocketAddress(config.getPort()), 1);

@@ -46,5 +46,9 @@ public class TransactionStore {
 		this.transactions = transactions;
 	}
 
+	public void removeTransaction(RestServiceOperation restServiceOperation) {
+		getTransactions().remove(restServiceOperation.getId());	
+	}
+
 
 }
